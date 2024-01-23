@@ -27,7 +27,7 @@ namespace savichev26pr.Pages
 
         private void Search(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.init.OpenPages(new Pages.Ticket(from.Text, to.Text));
         }
     }
 }

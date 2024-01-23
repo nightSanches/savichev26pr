@@ -38,7 +38,7 @@ namespace savichev26pr
         {
             main
         }
-        public List<TicketClass> ticketClasses = new List<TicketClass>();
+        public List<Ticket> ticketClasses = new List<Ticket>();
 
         private void Exit(object sender, RoutedEventArgs e)
         {

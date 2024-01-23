@@ -20,7 +20,7 @@ namespace savichev26pr.Pages
     /// </summary>
     public partial class Ticket : Page
     {
-        public Ticket()
+        public Ticket(string from, string to)
         {
             InitializeComponent();
         }
