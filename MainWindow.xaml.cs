@@ -20,9 +20,29 @@ namespace savichev26pr
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow init;
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
+            OpenPages(pages.main);
+        }
+        public void OpenPages(pages _page)
+        {
+            if (_page == pages.main)
+            {
+                frame.Navigate(new Pages.Main());
+            }
+        }
+        public enum pages
+        {
+            main
+        }
+        public List<TicketClass> ticketClasses = new List<TicketClass>();
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

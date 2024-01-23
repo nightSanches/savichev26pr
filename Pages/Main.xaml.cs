@@ -24,5 +24,10 @@ namespace savichev26pr.Pages
         {
             InitializeComponent();
         }
+
+        private void Search(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
