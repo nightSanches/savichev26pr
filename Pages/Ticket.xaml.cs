@@ -25,12 +25,16 @@ namespace savichev26pr.Pages
         public Ticket(string From, string To)
         {
             InitializeComponent();
-            AllTickets
+            AllTickets = TicketContext.AllTickets().FindAll(x => (x.from == From && To=="") || (x.to == To && From == "") || (x.from == From && x.to == To));
+            CreateUI();
         }
 
         public void CreateUI()
         {
-
+            foreach (TicketContext item in AllTickets)
+            {
+                parent.Children.Add(new Elements.Item(item));
+            }
         }
     }
 }

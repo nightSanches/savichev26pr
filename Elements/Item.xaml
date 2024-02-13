@@ -12,22 +12,22 @@
             <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="150"/>
         </Grid.ColumnDefinitions>
-        <Label Content="1999 Р" Margin="10,10,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16"/>
+        <Label x:Name="lPrice" Content="1999 Руб" Margin="10,10,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="14"/>
         <Button Content="Подробнее" HorizontalAlignment="Center" Margin="0,48,0,0" VerticalAlignment="Top" Height="29" Width="100"/>
 
         <Label Grid.Column="1" Content="pobeda" Margin="10,10,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16"/>
-        <Label Grid.Column="1" Content="05:15" Margin="10,35,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
-        <Label Grid.Column="1" Content="10.02.2024" Margin="10,61,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
-        <Label Grid.Column="1" Content="Пермь" Margin="10,87,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
+        <Label x:Name="fromTime" Grid.Column="1" Content="05:15" Margin="10,35,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
+        <Label x:Name="fromData" Grid.Column="1" Content="10.02.2024" Margin="10,61,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
+        <Label x:Name="from" Grid.Column="1" Content="Пермь" Margin="10,87,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
 
-        <Label Grid.Column="2" Content="В пути: 2ч 55мин" Margin="10,35,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
+        <Label x:Name="way" Grid.Column="2" Content="В пути: 2ч 55мин" Margin="10,35,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
         <Grid Grid.Column="2" Background="Gray" Height="5" VerticalAlignment="Top" Margin="0,56,0,0">
 
         </Grid>
 
         <Label Grid.Column="3" Content="pobeda" Margin="10,10,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16"/>
-        <Label Grid.Column="3" Content="05:15" Margin="10,35,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
-        <Label Grid.Column="3" Content="10.02.2024" Margin="10,61,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
-        <Label Grid.Column="3" Content="Пермь" Margin="10,87,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
+        <Label x:Name="toTime" Grid.Column="3" Content="05:15" Margin="10,35,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
+        <Label x:Name="toData" Grid.Column="3" Content="10.02.2024" Margin="10,61,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
+        <Label x:Name="to" Grid.Column="3" Content="Пермь" Margin="10,87,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="12"/>
     </Grid>
 </UserControl>

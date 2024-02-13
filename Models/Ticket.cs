@@ -12,12 +12,12 @@ namespace savichev26pr
         public string from { get; set; }
         public string to { get; set; }
         public int price { get; set; }
-        public DateTime time_start { get; set; }
-        public DateTime time_end { get; set; }
+        public string time_start { get; set; }
+        public string time_end { get; set; }
 
         public Ticket() { }
 
-        public Ticket(string from, string to, int price, DateTime time_start, DateTime time_end)
+        public Ticket(string from, string to, int price, string time_start, string time_end)
         {
             this.from = from;
             this.to = to;
