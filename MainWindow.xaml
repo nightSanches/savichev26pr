@@ -9,7 +9,7 @@
     <Grid>
         <Grid Height="70" VerticalAlignment="Top" Background="LightBlue">
             <Label VerticalAlignment="Center" HorizontalAlignment="Left" Content="Управление авиалиниями" FontSize="20" Margin="27,0,0,0"/>
-            <Button Click="Exit" VerticalAlignment="Center" HorizontalAlignment="Left" Height="28" Width="93" Content="Выйти" Margin="674,0,0,0"/>
+            <Button Click="Exit" VerticalAlignment="Center" HorizontalAlignment="Right" Height="28" Width="93" Content="Выйти" Margin="0,0,33,0"/>
         </Grid>
         <Frame x:Name="frame" NavigationUIVisibility="Hidden" Margin="0,70,0,0"/>
     </Grid>

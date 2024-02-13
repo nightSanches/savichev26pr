@@ -1,4 +1,5 @@
-﻿using System;
+﻿using savichev26pr.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,16 @@ namespace savichev26pr.Pages
     /// </summary>
     public partial class Ticket : Page
     {
-        public Ticket(string from, string to)
+        public List<TicketContext> AllTickets { get; set; }
+        public Ticket(string From, string To)
         {
             InitializeComponent();
+            AllTickets
+        }
+
+        public void CreateUI()
+        {
+
         }
     }
 }
